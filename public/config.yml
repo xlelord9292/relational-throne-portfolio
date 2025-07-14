@@ -1,0 +1,227 @@
+# CDN Admin Password
+cdn_password: "9HlVfB1NIy2w" # Set a strong password for /api/cdn endpoints. Example: use a long random string.
+# Portfolio Configuration
+# Edit this file to customize your portfolio
+
+# Personal Information
+personal:
+  name: "Your Name"
+  title: "Full Stack Developer"
+  subtitle: "Building digital experiences that matter"
+  bio: "Passionate developer with expertise in modern web technologies. I love creating innovative solutions and bringing ideas to life through code."
+  location: "Your Location"
+  email: "your.email@example.com"
+  phone: "+1 (555) 123-4567"
+  
+# Social Links - Set enabled: false to hide any social link
+social:
+  github:
+    enabled: true
+    url: "https://github.com/yourusername"
+  linkedin:
+    enabled: true
+    url: "https://linkedin.com/in/yourusername"
+  twitter:
+    enabled: true
+    url: "https://twitter.com/yourusername"
+  discord:
+    enabled: true
+    username: "xlelordsdiscord"
+  youtube:
+    enabled: true
+    url: "https://youtube.com/@relationalthrone"
+  kofi:
+    enabled: true
+    url: "https://ko-fi.com/yourusername"
+  website:
+    enabled: true
+    url: "https://discord.orbis-hosting.xyz"
+  instagram:
+    enabled: false
+    url: "https://instagram.com/yourusername"
+  tiktok:
+    enabled: false
+    url: "https://tiktok.com/@yourusername"
+
+# Hero Section
+hero:
+  enabled: true
+  greeting: "Hi, I'm"
+  name: "Your Name"
+  title: "Full Stack Developer & Designer"
+  description: "I create exceptional digital experiences through clean code and thoughtful design. Specializing in React, Next.js, and modern web technologies."
+  cta_primary: "View My Work"
+  cta_secondary: "Get In Touch"
+  avatar: "/images/avatar.png"
+  show_avatar: true
+  animated_text: true
+
+# About Section
+about:
+  enabled: true
+  title: "About Me"
+  description: "I'm a passionate developer with over 5 years of experience creating web applications and digital solutions. I love turning complex problems into simple, beautiful designs."
+  skills:
+    enabled: true
+    title: "Skills & Technologies"
+    animation_style: "stagger" # Options: "stagger", "wave", "bounce", "fade"
+    items:
+      - "React & Next.js"
+      - "TypeScript"
+      - "Node.js"
+      - "Python"
+      - "PostgreSQL"
+      - "AWS"
+      - "Docker"
+      - "GraphQL"
+  stats:
+    enabled: true
+    experience_years: 5
+    projects_completed: 50
+    happy_clients: 25
+
+# Projects Section
+projects:
+  enabled: true
+  title: "Featured Projects"
+  subtitle: "Some of my recent work"
+  show_all_button: true
+  items:
+    - title: "E-Commerce Platform"
+      description: "A full-stack e-commerce solution built with Next.js, Stripe, and PostgreSQL"
+      image: "/images/project-1.png"
+      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"]
+      github: "https://github.com/yourusername/ecommerce"
+      demo: "https://your-ecommerce-demo.com"
+      featured: true
+    
+    - title: "Task Management App"
+      description: "A collaborative task management application with real-time updates"
+      image: "/images/project-2.png"
+      technologies: ["React", "Socket.io", "Node.js", "MongoDB"]
+      github: "https://github.com/yourusername/taskapp"
+      demo: "https://your-taskapp-demo.com"
+      featured: true
+    
+    - title: "Weather Dashboard"
+      description: "A beautiful weather dashboard with location-based forecasts"
+      image: "/images/project-3.png"
+      technologies: ["Vue.js", "OpenWeather API", "Chart.js"]
+      github: "https://github.com/yourusername/weather"
+      demo: "https://your-weather-demo.com"
+      featured: false
+
+# Services Section
+services:
+  enabled: true
+  title: "What I Do"
+  subtitle: "Services I offer"
+  items:
+    - title: "Web Development"
+      description: "Custom web applications built with modern frameworks and best practices"
+      icon: "code"
+    
+    - title: "UI/UX Design"
+      description: "User-centered design that creates intuitive and engaging experiences"
+      icon: "palette"
+    
+    - title: "API Development"
+      description: "Robust and scalable APIs for web and mobile applications"
+      icon: "server"
+    
+    - title: "Consulting"
+      description: "Technical consulting and architecture planning for your projects"
+      icon: "lightbulb"
+
+# Experience Section
+experience:
+  enabled: true
+  title: "Experience"
+  items:
+    - company: "Tech Company Inc."
+      position: "Senior Full Stack Developer"
+      duration: "2022 - Present"
+      description: "Lead development of multiple client projects using React, Node.js, and cloud technologies."
+      
+    - company: "Startup XYZ"
+      position: "Frontend Developer"
+      duration: "2020 - 2022"
+      description: "Developed responsive web applications and improved user experience across multiple products."
+      
+    - company: "Freelance"
+      position: "Web Developer"
+      duration: "2019 - 2020"
+      description: "Worked with various clients to deliver custom web solutions and e-commerce platforms."
+
+# Testimonials Section
+testimonials:
+  enabled: false
+  title: "What Clients Say"
+  items:
+    - name: "John Doe"
+      company: "ABC Corp"
+      role: "CEO"
+      content: "Exceptional work quality and attention to detail. Delivered exactly what we needed on time."
+      avatar: "/images/testimonial-1.png"
+      
+    - name: "Jane Smith"
+      company: "XYZ Ltd"
+      role: "Product Manager"
+      content: "Great communication and technical skills. Would definitely work with again."
+      avatar: "/images/testimonial-2.png"
+
+# Contact Section
+contact:
+  enabled: true
+  title: "Get In Touch"
+  subtitle: "Let's work together"
+  description: "I'm always interested in new opportunities and exciting projects. Feel free to reach out!"
+  form:
+    enabled: true
+    fields:
+      - name: "name"
+        label: "Name"
+        type: "text"
+        required: true
+      - name: "email"
+        label: "Email"
+        type: "email"
+        required: true
+      - name: "subject"
+        label: "Subject"
+        type: "text"
+        required: true
+      - name: "message"
+        label: "Message"
+        type: "textarea"
+        required: true
+  webhook:
+    send: "/api/contact/send"
+    get: "/api/contact/get"
+
+# Theme Configuration
+theme:
+  primary_color: "#3B82F6"
+  secondary_color: "#1F2937"
+  accent_color: "#F59E0B"
+  background_color: "#FFFFFF"
+  text_color: "#1F2937"
+  
+# SEO Configuration
+seo:
+  title: "Your Name - Full Stack Developer"
+  description: "Full Stack Developer specializing in React, Next.js, and modern web technologies. Available for freelance projects and consulting."
+  keywords: "full stack developer, react developer, next.js, web development, freelance developer"
+  og_image: "/images/og-image.png"
+  
+# Analytics (optional)
+analytics:
+  google_analytics: "" # GA4 Measurement ID
+  
+# Features
+features:
+  dark_mode: true
+  animations: true
+  blog: false
+  contact_form: true
+  scroll_to_top: true
